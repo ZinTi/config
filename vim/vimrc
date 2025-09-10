@@ -1,0 +1,41 @@
+" vimrc 配置文件，将这些内容追加到系统 vimrc 中
+" vim --version 查看 vim 配置文件路径，通常系统 vimrc 路径 /etc/vimrc
+" vi 一般是 vim 的精简版，配置文件 /etc/virc
+"
+" 若配置已在最新版 vimrc 中默认存在，例如语法高亮 syntax on ，则不再格外启用
+"
+"
+"
+" syntax on						 " 语法高亮
+" colorscheme desert			 " 颜色方案
+set encoding=utf-8			     " 设置Vim内部字符编码
+set fileencodings=ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,euc-kr,default,latin1 " 文件编码探测顺序
+set fileencoding=utf-8           " 新建文件默认编码
+" set fileformat=unix              " 设置 Unix 格式
+
+set backspace=indent,eol,start " backspace key mode
+set number						 " 显示行号
+set relativenumber				 "
+set cursorline				     " 突出显示光标行
+set cursorcolumn                 " 突出显示当前列
+highlight cursorcolumn cterm=NONE ctermbg=236 ctermfg=NONE " 自定义列高亮颜色
+"
+"
+" set cursorbind
+
+set backspace=indent,eol,start " backspace key mode
+set autoindent
+set smartindent
+set tabstop=4					 " 制表符宽度
+set softtabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab                   " tab 转换 space key
+
+" set mouse=a                       " 设置鼠标支持
+"
+"
+"
+
+" cabbrev fenc fileencoding " 设置命令行缩写，可不用设置
+
